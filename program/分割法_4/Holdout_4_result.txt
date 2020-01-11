@@ -1,0 +1,34 @@
+/* 実行結果 */
+
+
+[tino@localhost ~]$ gcc Holdout_4.c -o Holdout_4.out -lm
+[tino@localhost ~]$ ./Holdout_4.out
+
+----setosa----
+setosaと判定された数:25
+versicと判定された数:0
+virginと判定された数:0
+
+--versicolor--
+setosaと判定された数:0
+versicと判定された数:23
+virginと判定された数:2
+
+virginicaと誤識別されたテストサンプル番号及びベクトル成分
+versicolor_number 17 : 	6.0 	 2.7 	 5.1 	 1.6
+versicolor_number 20 : 	5.5 	 2.5 	 5.0 	 1.3
+
+
+--virginica--
+setosaと判定された数:0
+versicと判定された数:2
+virginと判定された数:23
+
+versicolorと誤識別されたテストサンプル番号及びベクトル成分
+virginica_number 16 : 	7.9 	 3.8 	 6.4 	 2.0
+virginica_number 17 : 	6.3 	 2.8 	 5.1 	 1.5
+
+
+全テストサンプル75個中4個 誤識別
+誤識別率:5.333％
+[tino@localhost ~]$ 

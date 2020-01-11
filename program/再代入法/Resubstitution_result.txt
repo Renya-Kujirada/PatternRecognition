@@ -1,0 +1,35 @@
+/* 実行結果 */
+
+
+[tino@localhost ~]$ gcc Resubstitution.c -o Resubstitution.out -lm
+[tino@localhost ~]$ ./Resubstitution.out
+
+----setosa----
+setosaと判定された数:50
+versicと判定された数:0
+virginと判定された数:0
+
+--versicolor--
+setosaと判定された数:0
+versicと判定された数:47
+virginと判定された数:3
+
+virginicaと誤識別されたテストサンプル番号及びベクトル成分
+versicolor_number 21 : 	5.9 	 3.2 	 4.8 	 1.8
+versicolor_number 34 : 	6.0 	 2.7 	 5.1 	 1.6
+versicolor_number 40 : 	5.5 	 2.5 	 5.0 	 1.3
+
+
+--virginica--
+setosaと判定された数:0
+versicと判定された数:1
+virginと判定された数:49
+
+versicolorと誤識別されたテストサンプル番号及びベクトル成分
+virginica_number 34 : 	6.3 	 2.8 	 5.1 	 1.5
+
+
+全テストサンプル150個中4個 誤識別
+誤識別率:2.667％
+[tino@localhost ~]$ 
+
